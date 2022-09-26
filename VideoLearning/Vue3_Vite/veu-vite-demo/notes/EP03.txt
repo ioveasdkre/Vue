@@ -1,0 +1,5 @@
+傳遞資料:
+defineProps 父組件傳遞資料給子組件
+defineEmits 子組件傳遞資料給父組件
+
+component 標籤 :is 動態控制 vue頁面, 詳細請參 EP03.vue

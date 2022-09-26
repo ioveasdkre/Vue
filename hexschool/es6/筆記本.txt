@@ -1,0 +1,30 @@
+縮寫
+const result = arr.filter(function(item){
+    if(item === "qq"){
+        return item;
+    }
+}
+
+const result = arr.filter(item => item === "qq");
+
+
+this
+test: fun(){
+    console.log(this) // 指向 外層物件
+}
+test: () => {
+    console.log(this) // 指向 全域變數
+}
+test() {
+    console.log(this) // 指向 外層物件
+}
+
+let、const 不會繼承到 window上面，不會變成全域變數的物件
+
+Vue結構下的 this會回傳 proxy
+
+
+
+關注點分離
+把資料存入資料集, 在渲染畫面, 在管理資料傳輸上方便
+無須再從畫面中提取 而是從資料集提取

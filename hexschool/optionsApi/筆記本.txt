@@ -1,0 +1,18 @@
+Options API
+備註：
+1. 請勿使用箭頭函式 避免影響 this指向
+
+computed 計算值 可一次監聽多個值
+watch    監聽 一次只能監聽一個值
+
+生命週期
+beforeCreate    Vue 實體被建立，狀態與事件都尚未初始化
+created         Vue 實體被建立，狀態與事件已初始化完成(prop、data、computed等屬性已建立，vm.$el 屬性無法使用)
+beforeMount     Vue 實體尚未與模板 (DOM 節點) 綁定
+mounted         Vue 實體與掛載完成，的目標 DOM 被所替換 (可以視作 jQuery 的 Ready)
+updated         當狀態被變動時，畫面已同步更新完成
+beforeUnmount   Vue 實體物件被銷毀前
+unmounted       Vue 實體物件被銷毀完畢
+
+v-if    觸發時完整的移除元件
+v-show  載入時會直接執行生命週期 不受狀態影響 且使用 display: none

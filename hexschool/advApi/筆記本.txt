@@ -1,0 +1,12 @@
+Refs           Refs屬性 ref="name" this.$refs.name 可讀取 ref元件並調整其數值
+teleport       利用 teleport標籤 to="#idName" 的方式 自訂義元件位置.
+Provide        跨元件資訊傳遞 傳遞只會傳遞至指定層, 而非經過的每一層
+mixins         讓元件共用的方法 可使用多個元件
+extends        單一擴充元件
+V-自定義名稱    自訂義指令
+
+備註：
+1. teleport定義時 不可跨區塊(標籤)
+2. mixins可以重覆混和 重覆的變數名稱會被覆蓋 重覆的變數名稱優先權(主元件-最後重覆的元件)
+3. 權重：元件屬性 > mixins > extend
+4. 同名的變數、方法則會依據權重決定

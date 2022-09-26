@@ -1,0 +1,9 @@
+使用 Vue套件不需使用 import導入 因 Nxut3為全自動導入
+Srver階段沒有 Window物件 要在 onMounted作執行才會取得
+console.log(process.client); // ture Server端 false Client端
+
+使用 ohmyfetch套件
+https://github.com/unjs/ohmyfetch
+useAsyncData 只能在 pages Server端使用的 API
+
+useFetch 可以在任何 component Server端使用的 API

@@ -1,0 +1,19 @@
+API 站點說明：https://api.kcg.gov.tw/ServiceList/Detail/9c8e1450-e833-499c-8320-29b36b7ace5c
+
+API 連結位址：https://api.kcg.gov.tw/api/service/Get/9c8e1450-e833-499c-8320-29b36b7ace5c
+
+備用位址：https://github.com/hexschool/KCGTravel
+
+
+
+作業範例：https://codepen.io/Wcc723/pen/dyOgGvy?editors=1010
+
+作業條件：
+
+每張卡片都需要使用元件製作
+分頁需要製作成元件
+分頁需要接收資料 props
+分頁需要可以進行切換 emit
+分頁細節
+Previous, Next 需要可以正確運作（套用 disabled）
+當前頁面需要套用 .active 的視覺效果

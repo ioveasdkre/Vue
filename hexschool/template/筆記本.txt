@@ -1,0 +1,57 @@
+基本指令可查看 v-text資料夾
+渲染方法只讀資料 不更改資料
+
+渲染方法
+{{ name }} 顯示 data值
+{{ `${name}在${position}吃早餐` }} 可使用與字串連接的方式 或是使用 js原生方法 運算等等...
+
+v-bind 綁定 Vue元件 可使用{ 'active': link === '小明' } 或 {{ checkAnswer ? '吃飽了' : '還沒'}}判斷式 or data等等...
+v-bind:html屬性
+縮寫 :html屬性
+動態方式 :[html屬性] 括號內的值可用變數去控制
+:class="['btn-primary']" 陣列寫法
+
+v-html 編譯 html標籤 類似 js.innerHTML 不建議使用 有可能會造成 XSS攻擊
+v-once 單次綁定 當 data值變更時 頁面顯示不會同步變更
+v-pre 不編譯 Vue元件
+v-if 判斷式 並非隱藏節點而是移除
+v-show 使用 style的 display: onoe屬性隱藏起來 而非移除
+
+
+雙向綁定
+v-model 綁定 data 焦點移開時或是按 Enter才會寫入
+v-model.number 加入型別確保 輸入內容為數字型別
+v-model.trim 緊黏的文字 不可輸入空白
+
+
+事件處理
+v-on:事件屬性="方法" 綁定事件 縮寫 @
+
+動態事件
+@[事件屬性]="方法"
+@="{事件屬性: 方法}" 此方式不可傳遞參數
+
+
+修飾符
+只當事件是從特定按鍵 or 滑鼠事件
+別名修飾 - .enter, .tab, .delete, .esc, .space, .up, .down,
+.left, .right
+修飾符來實現僅在按下相應按鍵時才觸發鼠標或鍵盤事件的監聽器 -
+.ctrl, .alt, .shift, .meta
+
+@keyup.按鍵="方法"
+@keyup.按鍵.按鍵="方法"
+.屬性 滑鼠事件 left right middle 左右中
+
+事件修飾符
+.prevent - 調用 event.preventDefault()。 取消事件的預設行為(例如超連結跳轉頁面)
+.capture - 添加事件偵聽器時使用 capture 模式。(事件改為由外而內) 請參 冒泡事件
+.self - 只當事件是從偵聽器綁定的元素本身觸發時才觸發回調。 指觸發自己不會向外尋找
+.once - 只觸發一次回調。
+
+
+
+備註:
+1. {background-color} 不能這樣寫會出現錯誤 {backgroundColor} 請使用小駝峰方式才可編譯
+2. 方法 當沒有參數時，預設第一個則是 dom 事件參數
+3. 方法 當如果有參數時，則可以使用 $event 傳入 dom 事件參數

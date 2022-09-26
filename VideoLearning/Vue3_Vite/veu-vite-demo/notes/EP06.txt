@@ -1,0 +1,21 @@
+pinia 全域資料管理
+getters和 actions可以解構, state不能直接解構 因解構時就不在是 pinia物件.
+state若需解構 可使用 storeToRefs方法 解構時包裝成 pinia物件(參 src/components/HelloWorld.vue)
+
+解構可參
+src/components底下
+HelloWorld.vue
+WelcomeItem.vue
+
+
+vue官方監控, 監控 pinia建議使用 store.$subscribe, 因 vue官方監控可能無法監控全部，需設定深層監控，若使用 subscribe 可不需設定深層監控
+watch(監控變數, (新值, 舊值) => {
+  console.log("新值 =>", newVal);
+  console.log("舊值 =>", oldVal);
+});
+
+pinia的監控
+store.$subscribe((mutation, state) => {
+  console.log(mutation);
+  console.log(state);
+});

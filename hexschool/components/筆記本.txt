@@ -1,0 +1,15 @@
+props   接收事件(父組件傳遞資料給子組件)
+Emit    傳遞事件(子組件傳遞資料給附組件)
+
+備註：
+1. props <photo :url="imgUrl"></photo> :url 子元件(前內) imgUrl 父元件(後外)
+2. props 單向數據流 唯讀
+3. props 若需使用大寫, html在接收時請用 - 例如 props: ["imgUrl"]  html 接收為 :img-url=""
+4. props 可用 Object形式設定型別
+5. Emit 可觸發父組件 fun or 傳遞參數
+
+
+具名插巢(詳細請參 component_slot.html)
+<template v-slot:name>這是卡片 2 號</template>
+元件插巢 Props內部元件傳給外部元件使用(詳細請參 component_slot_props.html)
+<template v-slot:default="自定義名稱 用來接收資料">這是卡片 2 號</template>

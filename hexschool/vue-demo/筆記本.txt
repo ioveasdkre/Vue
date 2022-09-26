@@ -1,0 +1,16 @@
+vue CLI
+創建專案
+vue create 專案名稱 -m npm
+
+執行專案, 環境名稱請參
+package.json裡的 scripts底下 key
+npm run 開啟的環境名稱
+
+開啟 vue介面
+vue ui
+
+@ is an alias to /src
+
+
+備註：
+此專案未使用 vue CLI, 而是官方建議創建方式 npm init vue@katest
