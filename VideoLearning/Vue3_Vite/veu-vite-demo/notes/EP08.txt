@@ -4,3 +4,6 @@ createWebHashHistory        不需後端配置(給純前端使用)
 
 router.push("/about");      會紀錄上一頁，並切換頁面
 router.replace("/about");   不會紀錄上一頁，並切換頁面
+
+
+載有設置路由的頁面 更改網址才會受影響, 若非設定在路由的頁面, 更改網址將無動作

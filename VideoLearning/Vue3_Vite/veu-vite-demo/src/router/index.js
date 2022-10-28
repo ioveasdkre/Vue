@@ -1,12 +1,16 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+} from "vue-router";
 // import AboutView from "../views/AboutView.vue";
 import HomeView from "../views/HomeView.vue";
 import aboutHome from "../views/about/AboutHome.vue";
 
 // 創建一個可以被 Vue 使用的 Router(路由) 實體
 const router = createRouter({
-  // history: createWebHashHistory(), // 它在内部传递的实际 URL 之前使用了一个哈希字符（#）
-  history: createWebHistory(import.meta.env.BASE_URL), // createWebHistory 可以創建一個 HTML5 的 Web History 切換頁面 ( 需要有http的協議提供服務 )
+  history: createWebHashHistory(), // 它在内部传递的实际 URL 之前使用了一个哈希字符（#）
+  // history: createWebHistory(import.meta.env.BASE_URL), // createWebHistory 可以創建一個 HTML5 的 Web History 切換頁面 ( 需要有http的協議提供服務 )
   // 路由設定
   routes: [
     {

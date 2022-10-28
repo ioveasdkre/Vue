@@ -4,7 +4,7 @@ import router from "./router";
 // import App from "./App.vue"; // router路由(專案初始化)
 // import HelloBenson from "@/components/EP03/HelloBenson.vue";
 // import vImg from "@/components/EP03/vImg.vue";
-import App from "@/example/EP09.vue"; // 請更改範例檔名
+import App from "@/example/EP08.vue"; // 請更改範例檔名
 
 import "@/assets/example.css";
 // import "@/assets/EP07/example.css";
